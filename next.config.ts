@@ -5,8 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/Bookix',
-  assetPrefix: '/Bookix/'
+  assetPrefix: './'
 };
 
 export default nextConfig;
