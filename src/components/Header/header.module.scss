@@ -1,11 +1,23 @@
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 28px;
+  padding-bottom: 28px;
   background-color: #ffffff;
   &__container {
     display: flex;
     align-items: center;
-    // justify-content: space-between;
+    justify-content: space-between;
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 85px;
+        justify-content: start;
+    }
+    &__right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: end;
+    }
   }
 }
 .logo {
