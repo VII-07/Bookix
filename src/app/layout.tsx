@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Head from 'next/head';
 import '../styles/global.css';
 import '../styles/normalize.css';
 import Header from '@/components/Header/Header';
@@ -14,6 +15,7 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
+      <Head> <base href="/Bookix/" /> </Head>
       <body>
         <Header />
         <main>{children}</main>

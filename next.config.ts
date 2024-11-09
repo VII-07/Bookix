@@ -1,11 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export', 
+  output: 'export',
   images: {
-    unoptimized: true, 
+    unoptimized: true,
   },
-  basePath: '/Bookix', // Вказуємо базовий шлях для GitHub Pages
+  basePath: '/Bookix',
+  assetPrefix: '/Bookix/'
 };
 
 export default nextConfig;
