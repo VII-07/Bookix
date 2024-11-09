@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Container } from '../Container/Container';
 import styled from './header.module.scss';
 import HeaderInput from '../UI/HeaderInput/HeaderInput';
+import FavoriteButton from '../UI/FavoriteButton/FavoriteButton';
 
 const Header = () => {
   return (
@@ -12,7 +13,9 @@ const Header = () => {
             <span className={styled.logo}>Bookix</span>
           </Link>
           <HeaderInput/>
+          <FavoriteButton/>
         </div>
+
       </Container>
     </header>
   );
