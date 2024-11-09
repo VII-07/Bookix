@@ -1,15 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  
-};
-module.exports = {
-  output: 'export',
+  output: 'export', 
   images: {
     unoptimized: true, 
   },
-  basePath: '/Bookix', 
-  assetPrefix: '/Bookix/', 
+  basePath: '/Bookix', // Вказуємо базовий шлях для GitHub Pages
 };
 
 export default nextConfig;
