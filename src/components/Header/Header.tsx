@@ -3,6 +3,7 @@ import { Container } from '../Container/Container';
 import styled from './header.module.scss';
 import HeaderInput from '../UI/HeaderInput/HeaderInput';
 import FavoriteButton from '../UI/FavoriteButton/FavoriteButton';
+import NotitficationButton from '../UI/NotificationButton/NotificationButton';
 
 const Header = () => {
   return (
@@ -14,6 +15,7 @@ const Header = () => {
           </Link>
           <HeaderInput/>
           <FavoriteButton/>
+          <NotitficationButton/>
         </div>
 
       </Container>
