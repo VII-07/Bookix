@@ -3,7 +3,7 @@
   border: 1px solid rgba(195, 212, 233, 0.4);
   display: flex;
   align-items: center;
-  padding: 20px;
+  padding: 10px 20px;
   max-width: 309px;
   img {
     width: 24px;
@@ -25,5 +25,14 @@
       line-height: 150%; /* 21px */
       letter-spacing: -0.28px;
     }
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10px 20px;
+    input {
+      max-width: 100px;
+    }
+  }
+  @media screen and (max-width: 660px) {
+    display: none;
   }
 }

@@ -17,4 +17,7 @@
         border-radius: 90px;
 
     }
+    @media screen and (max-width: 660px) {
+        display: none;
+      }
 }

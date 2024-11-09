@@ -2,36 +2,53 @@
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: #ffffff;
+  @media screen and (min-width: 768px){
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     &__left {
-        display: flex;
-        align-items: center;
-        gap: 85px;
-        justify-content: start;
+      display: flex;
+      align-items: center;
+      gap: 85px;
+      margin-right: 10px;
+      justify-content: start;
+      flex-shrink: 0;
+      @media screen and (min-width: 768px){
+        gap: 55px;
+      }
     }
     &__right {
       display: flex;
       align-items: center;
       gap: 20px;
       justify-content: end;
+      flex-shrink: 0;
     }
   }
 }
 .logo {
   color: #3563e9;
-  font-family: "Climate Crisis";
+  font-family: 'Climate Crisis';
   font-size: 24px;
   font-weight: 400;
   line-height: 150%;
   text-transform: uppercase;
   letter-spacing: -0.72px;
-  &__link{
+  &__link {
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.07);
     }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 22px;
+    letter-spacing: -0.66px;
+  }
+  @media screen and (max-width: 660px) {
+    font-size: 20px;
   }
 }
