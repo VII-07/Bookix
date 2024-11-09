@@ -1,19 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:wght@400&family=Comfortaa:wght@700&family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Samsung+Sharp+Sans:wght@400;700&family=Tsukimi+Rounded:wght@300&family=Urbanist:wght@400;500;600;700;800&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    Segoe UI,
-    Roboto,
-    Oxygen,
-    Ubuntu,
-    Cantarell,
-    Fira Sans,
-    Droid Sans,
-    Helvetica Neue,
-    sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   font-size: 18px;
 }
@@ -25,10 +16,6 @@ body {
 a {
   color: #0070f3;
   text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
 
 img {

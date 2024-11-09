@@ -1,5 +1,25 @@
-.header{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    background-color: #FFFFFF;
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: #ffffff;
+  &__container {
+    display: flex;
+    align-items: center;
+    // justify-content: space-between;
+  }
+}
+.logo {
+  color: #3563e9;
+  font-family: "Climate Crisis";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 150%;
+  text-transform: uppercase;
+  letter-spacing: -0.72px;
+  &__link{
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.07);
+    }
+  }
 }

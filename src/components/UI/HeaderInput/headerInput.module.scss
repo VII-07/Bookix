@@ -1,0 +1,29 @@
+.search__container {
+  border-radius: 70px;
+  border: 1px solid rgba(195, 212, 233, 0.4);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  max-width: 309px;
+  img {
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+  }
+  input {
+    border: none;
+    &:focus-visible {
+      outline: none;
+    }
+    &::placeholder {
+      color: var(--Icons, #596780);
+      text-align: justify;
+      font-family: 'Plus Jakarta Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 21px */
+      letter-spacing: -0.28px;
+    }
+  }
+}

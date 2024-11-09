@@ -1,19 +1,8 @@
 import type { Metadata } from 'next';
-// import localFont from "next/font/local";
 import '../styles/global.css';
+import '../styles/normalize.css';
 import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
 
 export const metadata: Metadata = {
   title: 'Bookix',
@@ -25,7 +14,6 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      {/* <body className={`${geistSans.variable} ${geistMono.variable}`}> */}
       <body>
         <Header />
         <main>{children}</main>
