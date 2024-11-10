@@ -1,0 +1,67 @@
+.footer {
+  background-color: #3563e9;
+  &__solid {
+    width: 100%;
+    border: 1px solid #fff;
+    margin-bottom: 32px;
+  }
+}
+
+.footer__container {
+  padding: 64px 80px 48px 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  h3 {
+    color: #fff;
+    font-family: 'Climate Crisis';
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 36px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+  @media (max-width: 660px) {
+    align-items: start;
+  }
+}
+.license__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  p,
+  a {
+    color: #fff;
+    font-family: 'Plus Jakarta Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    a {
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    a{
+        font-size: 16px;
+    }
+  }
+  @media (max-width: 660px) {
+    flex-direction: column-reverse;
+    align-items: start;
+    ul{
+        padding-bottom: 16px;
+    }
+  }
+}
