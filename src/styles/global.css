@@ -36,3 +36,8 @@ img {
 main{
   flex: 1;
 }
+button{
+  border: none;
+  cursor: pointer;
+
+}
