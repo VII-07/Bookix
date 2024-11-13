@@ -1,4 +1,4 @@
-'use client'
+'use client';
 
 import styled from '../styles/not-found.module.scss';
 import { Container } from '@/components/Container/Container';
@@ -18,7 +18,9 @@ const Custom404 = () => {
             <Image src={errorSvg} alt="error code 404" />
             <span>4</span>
           </div>
-          <button><Link href="/">Back Home</Link></button>
+          <Link href="/">
+            <button>Back Home</button>
+          </Link>
         </div>
       </Container>
     </section>

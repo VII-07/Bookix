@@ -1,23 +1,33 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from './adCard.module.scss';
-import adImg1 from 'img/ad_image_1.jpeg';
+import { StaticImageData } from 'next/image';
 
-const AdCard = () => {
+interface CardProps {
+    title: string;          
+    description: string;    
+    buttonText: string;     
+    buttonLink: string;     
+    backgroundImage: string;
+    adImage: StaticImageData;
+    buttonBackgroundColor: string;
+    backgroundColor: string;
+  }
+
+const AdCard =({ title, description, buttonText, buttonLink, backgroundImage, buttonBackgroundColor,adImage,backgroundColor } : CardProps) => {
   return (
-    <div className={styled.ad__card__container}>
+    <div className={styled.ad__card__container} style={{backgroundImage:`url(${backgroundImage})`,backgroundColor: `${backgroundColor}`}}>
       <div>
-        <h2>The best book sharing platform</h2>
+        <h2>{title}</h2>
         <p>
-          Unleash the power of knowledge. Exchange books, explore new reads, and
-          connect with a community of book lovers from around the world.
+          {description}
         </p>
 
-        <Link href="/dsdfsd">
-          <button>Find Book </button>
+        <Link href={buttonLink}>
+          <button style={{backgroundColor:`${buttonBackgroundColor}`}}>{buttonText}</button>
         </Link>
       </div>
-      <Image src={adImg1} alt="ad book image" />
+      <Image src={adImage} alt="ad book image" />
     </div>
   );
 };

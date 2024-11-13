@@ -1,7 +1,5 @@
 .ad__card__container {
   position: relative;
-  background-color: #54a6ff;
-  background-image: url('../../../public/images/image_ad1.png');
   background-repeat: round;
   border-radius: 10px;
   width: 640px;
@@ -38,7 +36,6 @@
         letter-spacing: -0.32px;
         border-radius: 4px;
         padding: 10px 20px;
-        background: #3563e9;
         transition: all 0.3s ease-in-out;
         &:hover{
             transform: scale(1.05);
