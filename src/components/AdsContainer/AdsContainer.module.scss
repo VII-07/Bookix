@@ -1,8 +1,20 @@
-.ads__container{
-    &__content{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 40px;
+.ads__container {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .ads__container {
+    &__content {
+      display: flex;
+      justify-content: start;
+      gap: 15px;
+      position: relative;
+      overflow: hidden;
+      animation: scrollAds 20s infinite;
     }
+  }
 }
