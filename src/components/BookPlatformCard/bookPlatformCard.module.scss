@@ -1,12 +1,14 @@
-.ad__card__container {
+.platformCard {
   position: relative;
   background-repeat: round;
   border-radius: 10px;
   width: 100%;
   padding: 24px 24px 64px 24px;
   overflow: hidden;
+
   div {
     width: 284px;
+
     h2 {
       color: var(--Primary-0, #fff);
       font-family: 'Plus Jakarta Sans';
@@ -17,6 +19,7 @@
       text-transform: capitalize;
       margin-bottom: 16px;
     }
+
     p {
       color: var(--Primary-0, #fff);
       font-family: 'Plus Jakarta Sans';
@@ -26,6 +29,7 @@
       letter-spacing: -0.32px;
       margin-bottom: 20px;
     }
+
     a {
       button {
         color: var(--Primary-0, #fff);
@@ -37,6 +41,7 @@
         border-radius: 4px;
         padding: 10px 20px;
         transition: all 0.3s ease-in-out;
+
         &:hover {
           transform: scale(1.05);
           opacity: 0.8;
@@ -44,6 +49,7 @@
       }
     }
   }
+
   img {
     width: 37%;
     height: 100%;
@@ -55,7 +61,8 @@
   }
 }
 
-@keyframes showAd1 {
+/* Анімації */
+@keyframes showCard1 {
   0% {
     opacity: 1;
     transform: translateX(0);
@@ -77,7 +84,8 @@
     transform: translateX(0);
   }
 }
-@keyframes showAd2 {
+
+@keyframes showCard2 {
   0% {
     opacity: 0;
     transform: translateX(100%);
@@ -100,37 +108,44 @@
   }
 }
 
+/* Медійні запити */
 @media screen and (max-width: 1400px) {
-  .ad__card__container {
+  .platformCard {
     width: 100%;
-    img{
+
+    img {
       width: 16em;
       height: 113%;
       right: 9%;
       top: 16%;
     }
   }
-  .ad__card__container:nth-child(1) {
-    animation: showAd1 20s infinite;
+
+  .platformCard:nth-child(1) {
+    animation: showCard1 20s infinite;
     opacity: 0;
   }
-  .ad__card__container:nth-child(2) {
-    animation: showAd2 20s infinite;
+
+  .platformCard:nth-child(2) {
+    animation: showCard2 20s infinite;
     position: absolute;
     opacity: 0;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .ad__card__container {
+  .platformCard {
     padding: 24px 24px 54px 24px;
-    div{
-      a{
-        button{
+
+    div {
+      a {
+        button {
           font-size: 16px;
         }
       }
     }
-    img{
+
+    img {
       width: 11em;
       height: 90%;
       right: 12%;
@@ -138,19 +153,24 @@
     }
   }
 }
+
 @media screen and (max-width: 640px) {
-  .ad__card__container {
+  .platformCard {
     padding: 24px 24px 54px 24px;
-    div{
+
+    div {
       width: 240px;
-      h2{
+
+      h2 {
         font-size: 20px;
       }
-      p{
+
+      p {
         font-size: 14px;
       }
     }
-    img{
+
+    img {
       width: 11em;
       height: 90%;
       right: 12%;
@@ -160,23 +180,27 @@
 }
 
 @media screen and (max-width: 550px) {
-  .ad__card__container {
-    div{
+  .platformCard {
+    div {
       width: 180px;
-      h2{
+
+      h2 {
         font-size: 16px;
       }
-      p{
+
+      p {
         font-size: 12px;
       }
-      a{
-        button{
+
+      a {
+        button {
           font-size: 12px;
           padding: 9px 12px;
         }
       }
     }
-    img{
+
+    img {
       width: 10em;
       height: 100%;
       right: 16%;
@@ -184,9 +208,10 @@
     }
   }
 }
+
 @media screen and (max-width: 500px) {
-  .ad__card__container {
-    img{
+  .platformCard {
+    img {
       width: 8em;
       height: 90%;
       right: 11%;

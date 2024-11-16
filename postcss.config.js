@@ -6,13 +6,13 @@ module.exports = {
             'postcss-preset-env',
             {
               autoprefixer: {
-                flexbox: 'no-2009', // для підтримки старих версій flexbox
-                grid: true, // додавання префіксів для CSS grid
+                flexbox: 'no-2009', 
+                grid: true, 
               },
-              stage: 3, // стадія підтримки CSS властивостей
+              stage: 3,
               features: {
-                'custom-properties': false, // вимикає підтримку custom properties
-                'keyframes': true, // додавання префіксів для анімацій
+                'custom-properties': false, 
+                'keyframes': true, 
               },
             },
           ],

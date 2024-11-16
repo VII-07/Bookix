@@ -1,17 +1,17 @@
-import AdCard from '../AdCard/AdCard';
 import { Container } from '../Container/Container';
-import styled from './adsContainer.module.scss';
+import styled from './bookPlatformCardsContainer.module.scss';
 import adImageLeft from 'img/ad_image_1.jpeg';
 import adBgRight from 'img/ad-2.png';
 import adBgLeft from 'img/image_ad1.png';
 import adImageRight from 'img/adImage-2.jpeg';
+import BookPlatformCard from '../BookPlatformCard/BookPlatformCard';
 
-const AdsContainer = () => {
+const BookPlatformCardsContainer = () => {
   return (
-    <section className={styled.ads__container}>
+    <section className={styled.platformCardsContainer}>
       <Container>
-        <div className={styled.ads__container__content}>
-          <AdCard
+        <div className={styled.platformCardsContent}>
+          <BookPlatformCard
             title="The best book sharing platform"
             description="Unleash the power of knowledge. Exchange books, explore new reads, and connect with a community of book lovers from around the world."
             buttonText="Find Book"
@@ -19,9 +19,9 @@ const AdsContainer = () => {
             adImage={adImageLeft}
             buttonBackgroundColor="#3563e9"
             buttonLink="/find-book"
-            backgroundColor='#54a6ff'
+            backgroundColor="#54a6ff"
           />
-          <AdCard
+          <BookPlatformCard
             title="A way to exchange read books"
             description="Finished a book and ready for a new adventure? Trade your read books with fellow readers through our seamless exchange system."
             buttonText="Check Trades"
@@ -29,7 +29,7 @@ const AdsContainer = () => {
             adImage={adImageRight}
             buttonBackgroundColor="#54A6FF"
             buttonLink="/check-trades"
-            backgroundColor='#3563E9'
+            backgroundColor="#3563E9"
           />
         </div>
       </Container>
@@ -37,4 +37,4 @@ const AdsContainer = () => {
   );
 };
 
-export default AdsContainer;
+export default BookPlatformCardsContainer;

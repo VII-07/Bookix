@@ -1,19 +1,18 @@
-.ads__container {
-  &__content {
+.platformCardsContent {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-  }
 }
+
 @media screen and (max-width: 1400px) {
-  .ads__container {
-    &__content {
+  .platformCardsContent {
       display: flex;
       justify-content: start;
       gap: 14px;
       position: relative;
       overflow: hidden;
     }
-  }
 }
+
+

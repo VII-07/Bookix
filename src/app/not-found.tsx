@@ -1,6 +1,6 @@
 'use client';
 
-import styled from '../styles/not-found.module.scss';
+import styled from '../styles/pages/not-found.module.scss';
 import { Container } from '@/components/Container/Container';
 import errorSvg from 'img/404.svg';
 import Image from 'next/image';
