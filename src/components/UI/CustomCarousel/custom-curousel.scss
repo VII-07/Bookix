@@ -5,11 +5,30 @@
   height: 48px;
   opacity: 1;
   border-radius: 50%; /* Кругла форма */
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   border: none; /* Без рамки */
+  transition: all 0.3s ease-in-out;
   &::after{
+    content: "\2191";
     position: static;
-
+    display: inline-block;
+    transform: scale(2.5) translateY(50%);
+    border: 0 solid currentcolor;
   }
+}
+.ant-carousel .slick-prev{
+    transform: rotate(-90deg);
+    filter: drop-shadow(-4px 0px 4px rgba(0, 0, 0, 0.25));
+    &:hover{
+        transform: scale(1.1) rotate(-90deg);
+        opacity: 0.9;
+      }
+}
+.ant-carousel .slick-next{
+    transform: rotate(90deg);
+    filter: drop-shadow(4px 0px 4px rgba(0, 0, 0, 0.25));
+    &:hover{
+        transform: scale(1.1) rotate(90deg);
+        opacity: 0.9;
+      }
 }
 

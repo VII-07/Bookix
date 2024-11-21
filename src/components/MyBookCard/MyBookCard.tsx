@@ -14,12 +14,7 @@ const MyBookCard = () => {
   return (
     <div className={styled.my__book__card__container}>
       <div className={styled.my__book__card__text}>
-        <div>
-          <h3>The Library Book</h3>
-          <button>
-            <HeartFilled />
-          </button>
-        </div>
+        <h3>The Library Book</h3>
         <h4>Susan Orlean</h4>
       </div>
       <div className={styled.my__book__card__image__container}>
@@ -40,8 +35,8 @@ const MyBookCard = () => {
         </div>
       </div>
       <div className={styled.my__book__card__buuton__container}>
-        <WhiteButton linkButton='#' textButton='More Info'/>
-        <BlueButton linkButton='#' textButton='Trade now'/>
+        <WhiteButton linkButton="#" textButton="More Info" />
+        <BlueButton linkButton="#" textButton="Trade now" />
       </div>
     </div>
   );

@@ -7,26 +7,13 @@
   }
   &__text {
     margin-bottom: 23px;
-    div {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      h3 {
-        font-family: 'Plus Jakarta Sans';
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 150%; /* 30px */
-        letter-spacing: -0.6px;
-        margin: 0;
-      }
-      button {
-        background: none;
-        svg {
-          color: red;
-          width: 24px;
-          height: 24px;
-        }
-      }
+    h3 {
+      font-family: 'Plus Jakarta Sans';
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 150%; /* 30px */
+      letter-spacing: -0.6px;
+      margin: 0;
     }
     h4 {
       margin: 0;
