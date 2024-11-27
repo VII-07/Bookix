@@ -1,9 +1,7 @@
 import Link from 'next/link';
 import { Container } from '../Container/Container';
 import styled from './my-book.module.scss';
-import { Carousel } from 'antd';
 import MyBookCard from '../MyBookCard/MyBookCard';
-import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import CustomCarousel from '../UI/CustomCarousel/CustomCarousel';
 
 const MyBook = () => {
@@ -17,7 +15,7 @@ const MyBook = () => {
           </div>
           <CustomCarousel>
             {[...Array(9)].map((_, index) => (
-              <div key={index} className="card-wrapper">
+              <div key={index} className={styled.card__wrapper}>
                 <MyBookCard />
               </div>
             ))}

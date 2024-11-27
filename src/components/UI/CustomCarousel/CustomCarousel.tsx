@@ -6,6 +6,7 @@ interface CarouselProps {
   children: ReactNode;
 }
 
+
 const CustomCarousel = ({ children }: CarouselProps) => {
   return (
     <Carousel
@@ -14,13 +15,13 @@ const CustomCarousel = ({ children }: CarouselProps) => {
       slidesToScroll={1} // Прокручувати по 1 слайду
       responsive={[
         {
-          breakpoint: 1024, // Налаштування для планшетів
+          breakpoint: 1377, // Налаштування для планшетів
           settings: {
-            slidesToShow: 4,
+            slidesToShow: 3,
           },
         },
         {
-          breakpoint: 768, // Налаштування для телефонів
+          breakpoint: 1080, // Налаштування для телефонів
           settings: {
             slidesToShow: 2,
           },
